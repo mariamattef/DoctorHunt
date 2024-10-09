@@ -5,7 +5,7 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-import 'package:doctor_hunt/features/core/doctorHunt_app.dart';
+import 'package:doctor_hunt/doctorHunt_app.dart';
 import 'package:doctor_hunt/route_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';

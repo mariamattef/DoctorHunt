@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-  static const String id = "PagePage";
+  static const String id = "LoginPage";
   const LoginPage({super.key});
 
   @override

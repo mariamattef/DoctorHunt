@@ -1,5 +1,6 @@
-import 'package:doctor_hunt/features/core/color_utility.dart';
+import 'package:doctor_hunt/core/Constants/color_utility.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomTextButton extends StatelessWidget {
   final String label;
@@ -20,9 +21,9 @@ class CustomTextButton extends StatelessWidget {
           child: Text(
             textAlign: TextAlign.center,
             label,
-            style: const TextStyle(
+            style: TextStyle(
                 color: ColorUtility.grayText,
-                fontSize: 14,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w400),
           )),
     );

@@ -1,12 +1,15 @@
-import 'package:doctor_hunt/features/presentation/pages/login_page.dart';
-import 'package:doctor_hunt/features/presentation/widgets/custom%20_text_button.dart';
-import 'package:doctor_hunt/features/presentation/widgets/custom_elevated_button.dart';
+import 'package:doctor_hunt/features/Home/presentation/pages/signup_page.dart';
+import 'package:doctor_hunt/features/Home/presentation/widgets/custom%20_text_button.dart';
+import 'package:doctor_hunt/features/Home/presentation/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
-import 'package:doctor_hunt/features/core/utils/image_utitity.dart';
-import 'package:doctor_hunt/features/presentation/widgets/onBoarding_item.dart';
+import 'package:doctor_hunt/core/Constants/image_utitity.dart';
+import 'package:doctor_hunt/features/Home/presentation/widgets/onBoarding_item.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OnBoardingPage extends StatefulWidget {
-  static const String id = 'SplashPage';
+  static const String id = 'OnBoardingPage';
+
+  const OnBoardingPage({super.key});
 
   @override
   State<OnBoardingPage> createState() => _OnBoardingPageState();
@@ -53,10 +56,10 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
               physics: const ScrollPhysics(),
               controller: _pageController,
               onPageChanged: onChangedFunction,
-              children: const <Widget>[
+              children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.only(right: 19),
-                  child: OnBoardItemWidget(
+                  padding: EdgeInsets.only(right: 19.sp),
+                  child: const OnBoardItemWidget(
                     image: ImageUtility.onBoarding1,
                     title: 'Find Trusted Doctors',
                     description:
@@ -64,8 +67,8 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 19),
-                  child: OnBoardItemWidget(
+                  padding: EdgeInsets.only(left: 19.sp),
+                  child: const OnBoardItemWidget(
                     image: ImageUtility.onBoarding2,
                     title: 'Choose Best Doctors',
                     description:
@@ -73,8 +76,8 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(right: 19),
-                  child: OnBoardItemWidget(
+                  padding: EdgeInsets.only(right: 19.sp),
+                  child: const OnBoardItemWidget(
                     image: ImageUtility.onBoarding3,
                     title: 'Easy Appointments',
                     description:
@@ -86,7 +89,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
           ),
           CustomElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, LoginPage.id);
+              Navigator.pushNamed(context, SignUpPage.id);
             },
             text: 'Get Started',
             width: double.infinity,
@@ -98,11 +101,21 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                   onPressed: () {
                     _skipFunction(2);
                   }),
-          const SizedBox(
-            height: 43,
+          SizedBox(
+            height: 43.h,
           ),
         ],
       ),
     );
   }
 }
+// Container(
+//   decoration: BoxDecoration(
+//     gradient: LinearGradient(
+//       begin: Alignment.topCenter,
+//       end: Alignment.bottomCenter,
+//       colors: [Colors.blue, Colors.purple], // Set your gradient colors here
+//     ),
+//   ),
+//   child: SplashScreenContent(), // Your splash screen content
+// );
