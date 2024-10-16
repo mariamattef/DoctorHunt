@@ -1,14 +1,14 @@
 flutter_native_splash:
   color: "#FFFFFF"
 
-  image: assets/images/logo.png
+  image: assets/images/llogo.png
 
   # The branding property allows you to specify an image used as branding in the splash screen.
   # It must be a png file. It is supported for Android, iOS and the Web.  For Android 12,
   # see the Android 12 section below.
   # branding: assets/images/doctorhunt.png
 
-  branding_mode: bottom
+  # branding_mode: bottom
 
   # branding_bottom_padding: 20
 
@@ -34,7 +34,7 @@ flutter_native_splash:
     # App icon background color.
     #icon_background_color: "#111111"
 
-    branding: assets/images/brand.png
+    # branding: assets/images/brand.png
 
     # The image_dark, color_dark, icon_background_color_dark, and branding_dark set values that
     # apply when the device is in dark mode. If they are not specified, the app will use the
@@ -70,7 +70,7 @@ flutter_native_splash:
   #background_image_web: "assets/background-web.png"
   #background_image_dark_web: "assets/dark-background-web.png"
   #branding_android: assets/brand-android.png
-  branding_bottom_padding_android: 24
+  # branding_bottom_padding_android: 24
   #branding_dark_android: assets/dart_dark-android.png
   #branding_ios: assets/brand-ios.png
   #branding_bottom_padding_ios: 24
@@ -85,7 +85,7 @@ flutter_native_splash:
   # https://developer.android.com/reference/android/view/Gravity): bottom, center,
   # center_horizontal, center_vertical, clip_horizontal, clip_vertical, end, fill, fill_horizontal,
   # fill_vertical, left, right, start, or top.
-  android_gravity: center
+  # android_gravity: center
   #
   # ios_content_mode can be one of the following iOS UIView.ContentMode (see
   # https://developer.apple.com/documentation/uikit/uiview/contentmode): scaleToFill,
@@ -94,7 +94,7 @@ flutter_native_splash:
   #ios_content_mode: center
   #
   # web_image_mode can be one of the following modes: center, contain, stretch, and cover.
-  web_image_mode: center
+  # web_image_mode: center
 
   # The screen orientation can be set in Android with the android_screen_orientation parameter.
   # Valid parameters can be found here:

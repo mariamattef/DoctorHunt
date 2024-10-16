@@ -1,10 +1,9 @@
 import 'package:doctor_hunt/doctorHunt_app.dart';
-import 'package:doctor_hunt/route_helper.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(DoctorHuntApp(
-    appRouter: AppRouter(),
-  ));
+  await ScreenUtil.ensureScreenSize();
+  runApp(const DoctorHuntApp());
 }

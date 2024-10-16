@@ -1,10 +1,12 @@
-import 'package:doctor_hunt/features/Home/presentation/pages/signup_page.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/custom%20_text_button.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/custom_elevated_button.dart';
+import 'package:doctor_hunt/features/autth/presentarion/pages/signup_page.dart';
+import 'package:doctor_hunt/core/widgets/custom%20_text_button.dart';
+import 'package:doctor_hunt/core/widgets/custom_elevated_button.dart';
+import 'package:doctor_hunt/route_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_hunt/core/Constants/image_utitity.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/onBoarding_item.dart';
+import 'package:doctor_hunt/features/on_boarding/oresentations/widgets/onBoarding_item.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class OnBoardingPage extends StatefulWidget {
   static const String id = 'OnBoardingPage';
@@ -89,7 +91,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
           ),
           CustomElevatedButton(
             onPressed: () {
-              Navigator.pushNamed(context, SignUpPage.id);
+              GoRouter.of(context).go(AppRouter.kSignUpPage);
             },
             text: 'Get Started',
             width: double.infinity,
