@@ -1,10 +1,10 @@
-import 'package:doctor_hunt/features/autth/presentarion/pages/signup_page.dart';
-import 'package:doctor_hunt/core/widgets/custom%20_text_button.dart';
-import 'package:doctor_hunt/core/widgets/custom_elevated_button.dart';
-import 'package:doctor_hunt/route_helper.dart';
+import '../../../autth/presentarion/pages/signup_page.dart';
+import '../../../../core/widgets/custom%20_text_button.dart';
+import '../../../../core/widgets/custom_elevated_button.dart';
+import '../../../../core/Routing/app_router.dart';
 import 'package:flutter/material.dart';
-import 'package:doctor_hunt/core/Constants/image_utitity.dart';
-import 'package:doctor_hunt/features/on_boarding/oresentations/widgets/onBoarding_item.dart';
+import '../../../../core/Constants/image_utitity.dart';
+import '../widgets/onBoarding_item.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
@@ -111,13 +111,3 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
     );
   }
 }
-// Container(
-//   decoration: BoxDecoration(
-//     gradient: LinearGradient(
-//       begin: Alignment.topCenter,
-//       end: Alignment.bottomCenter,
-//       colors: [Colors.blue, Colors.purple], // Set your gradient colors here
-//     ),
-//   ),
-//   child: SplashScreenContent(), // Your splash screen content
-// );

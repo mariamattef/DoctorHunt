@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/Constants/color_utility.dart';
+import '../Constants/color_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -27,14 +27,20 @@ class CustomElevatedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 10, horizontal: horizontal ?? 20),
+      padding:
+          EdgeInsets.symmetric(vertical: 10.h, horizontal: horizontal ?? 20.w),
       child: SizedBox(
         width: width,
+        height: 54.h,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
+              elevation: 5,
+              shadowColor: Colors.black.withOpacity(0.5),
               fixedSize: Size(width ?? double.infinity, height ?? 52.h),
               shape: RoundedRectangleBorder(
-                side: const BorderSide(color: ColorUtility.grayLight),
+                side: BorderSide(
+                  style: BorderStyle.none,
+                ),
                 borderRadius: BorderRadius.circular(12.0.r),
               ),
               backgroundColor: color ?? ColorUtility.main,

@@ -1,48 +1,56 @@
-import 'package:doctor_hunt/core/Constants/color_utility.dart';
-import 'package:doctor_hunt/core/widgets/custom%20_text_button.dart';
-import 'package:doctor_hunt/core/widgets/custom_elevated_button.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/widgets/google_facebook_button.dart';
+import 'package:doctor_hunt/core/Constants/spacing.dart';
+import 'package:doctor_hunt/features/autth/presentarion/pages/widgets/form_signup_widget.dart';
+
+import '../../../../../core/Constants/app_colors.dart';
+import '../../../../../core/Constants/app_syyles.dart';
+
+import 'custom_intro_signup.dart';
+import 'footer_signup_widget.dart';
+
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SignUpPageBody extends StatelessWidget {
   const SignUpPageBody({super.key});
-
+  final bool isAgree = false;
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
+    return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.all(20.0),
+        padding: EdgeInsets.all(20.0.r),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: 50),
-            Text(
-              'Join us to start searching',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(20.0),
-              child: Text(
-                'you can search c course , apply course and find scholarship for abroad studies',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400,
-                    color: ColorUtility.grayText),
-              ),
-            ),
-            SizedBox(height: 52),
-            Form(
-                child: Column(
+            const CustomIntroSignUp(),
+            const FormSignupWidget(),
+            verticalSpace(15),
+            Row(
               children: [
-                GoogleFacebookButton(),
-                // CustomTextButton(label: , onPressed: () {  },)
+                Radio(
+                    fillColor:
+                        const WidgetStatePropertyAll(AppColors.textColor),
+                    activeColor: AppColors.textColor,
+                    focusColor: AppColors.textColor,
+                    value: true,
+                    groupValue: isAgree,
+                    onChanged: (value) {
+                      // setState(() {
+                      //   isAgree = value;
+                      // });
+                    }),
+                Expanded(
+                  child: Text(
+                    'I agree with the Terms of Service & Privacy Policy',
+                    style: AppStyles.textStyle12.copyWith(
+                      color: AppColors.textColor,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ),
               ],
-            ))
+            ),
+            verticalSpace(54),
+            const FooterSignUpWidget(),
           ],
         ),
       ),

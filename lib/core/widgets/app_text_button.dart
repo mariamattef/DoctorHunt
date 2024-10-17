@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/Constants/app_colors.dart';
+import '../Constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,6 +20,7 @@ class AppTextButton extends StatelessWidget {
   final TextStyle textStyle;
   // Required text style for the button text.
   final VoidCallback onPressed;
+
   // Required callback function to be executed when the button is pressed.
   const AppTextButton({
     super.key,
@@ -41,7 +42,7 @@ class AppTextButton extends StatelessWidget {
         shape: WidgetStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(
-              borderRadius ?? 16.0.r,
+              borderRadius ?? 12.0.r,
             ),
           ),
         ),
@@ -49,7 +50,7 @@ class AppTextButton extends StatelessWidget {
         // shape of the button to a rounded rectangle with a border radius. If
         //borderRadius is not provided, it defaults to 16.0.r.
         backgroundColor: WidgetStatePropertyAll(
-          backgroundColor ?? AppColors.primaryColor,
+          backgroundColor ?? AppColors.whiteColor,
         ),
         // backgroundColor: WidgetStatePropertyAll(...): Sets the background
         //color of the button. If backgroundColor is not provided, it defaults

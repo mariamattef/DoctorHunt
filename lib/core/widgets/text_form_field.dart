@@ -1,12 +1,12 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-
-import 'package:doctor_hunt/core/Constants/app_colors.dart';
-import 'package:doctor_hunt/core/Constants/app_syyles.dart';
+import '../Constants/app_colors.dart';
+import '../Constants/app_syyles.dart';
+import '../Constants/color_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppTextFormField extends StatelessWidget {
   final EdgeInsetsGeometry? contentPadding;
+  final TextInputType? keyboardType;
   // Padding inside the text field.
   final InputBorder? focusedBorder;
   //  Border style when the text field is focused.
@@ -35,6 +35,7 @@ class AppTextFormField extends StatelessWidget {
   final Color? cursorColor;
   const AppTextFormField({
     super.key,
+    this.keyboardType,
     this.contentPadding,
     this.focusedBorder,
     this.inputStyle,
@@ -68,6 +69,7 @@ class AppTextFormField extends StatelessWidget {
 
       decoration: InputDecoration(
         labelText: labelText,
+
         labelStyle: labelStyle,
         // The InputDecoration object customizes the appearance of the TextFormField
         isDense: true,
@@ -87,8 +89,8 @@ class AppTextFormField extends StatelessWidget {
                 radius?.r ?? 0,
               ),
               borderSide: BorderSide(
-                color: focusdBorderColor ?? AppColors.primaryColor,
-                width: 1.3.w,
+                color: focusdBorderColor ?? AppColors.primaryColorWithOpacity,
+                width: 1.w,
               ),
             ),
         enabledBorder: OutlineInputBorder(
@@ -98,18 +100,18 @@ class AppTextFormField extends StatelessWidget {
             radius?.r ?? 0,
           ),
           borderSide: BorderSide(
-            color: enabledBorderSideColor ?? AppColors.primaryColor,
+            color: enabledBorderSideColor ?? AppColors.primaryColorWithOpacity,
             width: 1.w,
           ),
         ),
-        hintStyle: hintStyle ?? AppStyles.textStyle18,
+        hintStyle: hintStyle ?? AppStyles.textStyle16,
         // hintStyle: Uses the provided hintStyle or defaults to a predefined text style.
         hintText: hintText,
         // hintText: Displays the provided hint text.
         suffixIcon: suffixIcon,
-        suffixIconColor: AppColors.whiteColor,
+        suffixIconColor: AppColors.textColor,
         prefixIcon: prefixIcon,
-        prefixIconColor: AppColors.whiteColor,
+        prefixIconColor: AppColors.primaryColor,
         // suffixIcon: Displays the provided suffix icon, if any.
 
         fillColor: fillColor ?? AppColors.whiteColor,
@@ -121,7 +123,7 @@ class AppTextFormField extends StatelessWidget {
             radius?.r ?? 0,
           ),
           borderSide: BorderSide(
-            color: AppColors.whiteColor,
+            color: AppColors.primaryColorWithOpacity,
             width: 1.w,
           ),
         ),
@@ -131,22 +133,24 @@ class AppTextFormField extends StatelessWidget {
             radius?.r ?? 0,
           ),
           borderSide: BorderSide(
-            color: AppColors.whiteColor,
+            color: AppColors.primaryColorWithOpacity,
             width: 1.w,
           ),
         ),
         // focusedErrorBorder set the border styles when there is a validation
         // error.
       ),
-      cursorColor: cursorColor ?? AppColors.primaryColor,
+      cursorColor: cursorColor ?? ColorUtility.main,
       // cursorColor: Sets the color of the cursor to the primary blue color.
       obscureText: isObscureText ?? false,
       // obscureText: Uses the provided isObscureText value or defaults to false.
-      style: inputStyle ?? AppStyles.textStyle18,
+      style: inputStyle ?? AppStyles.textStyle16,
+      autocorrect: true,
+      keyboardType: keyboardType,
       // style: Uses the provided inputStyle or defaults to a predefined text style.
     );
   }
 }
 // AppTextFormField, which is a specialized text input field for a Flutter
-// application. This widget is designed to be reusable and customizable,
+// applicatison. This widget is designed to be reusable and customizable,
 //with several properties that allow for flexible styling and behavior.
