@@ -1,7 +1,7 @@
-import 'package:doctor_hunt/features/on_boarding/oresentations/pages/on_boarding_page.dart';
-import 'package:doctor_hunt/route_helper.dart';
+import 'core/Routing/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DoctorHuntApp extends StatelessWidget {
   // final AppRouter appRouter;
@@ -16,9 +16,9 @@ class DoctorHuntApp extends StatelessWidget {
           routerConfig: AppRouter().router,
           debugShowCheckedModeBanner: false,
           title: 'Doctor Hunt',
-          theme: ThemeData(
-            useMaterial3: true,
-          ),
+          theme: ThemeData.light().copyWith(
+              textTheme:
+                  GoogleFonts.rubikTextTheme(ThemeData.light().textTheme)),
         );
       },
       designSize: const Size(360, 690),
