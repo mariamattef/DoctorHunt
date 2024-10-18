@@ -17,6 +17,7 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
   // Icons SVG
   static const String assetgoogle = "${SvgAssets.svgAssets}google.svg";
   static const String assetfacebook = "${SvgAssets.svgAssets}facebook.svg";
+  static const String bg = "${PngAssets.pngAssets}bg.png";
 
   // Video Assets
 //   static const String testOnBoardingVideo =

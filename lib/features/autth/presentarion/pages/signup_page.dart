@@ -1,3 +1,5 @@
+import 'package:doctor_hunt/core/Constants/app_assets.dart';
+
 import '../../../../core/Constants/color_utility.dart';
 import '../../../../core/widgets/custom_elevated_button.dart';
 import 'widgets/signup-page_body.dart';
@@ -12,14 +14,19 @@ class SignUpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
-        // floatingActionButton: FloatingActionButton(
-        //   onPressed: () {
-        //     GoRouter.of(context).go(AppRouter.kLoginPage);
-        //   },
-        //   child: const Icon(Icons.arrow_back),
-        // ),
-
-        body: const SignUpPageBody());
+      body: Stack(children: [
+        Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(
+                AppAssets.bg,
+              ),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+        const SignUpPageBody(),
+      ]),
+    );
   }
 }

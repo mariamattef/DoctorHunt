@@ -26,8 +26,8 @@ class GoogleFacebookButton extends StatelessWidget {
                 children: [
                   SvgPicture.asset(
                     AppAssets.assetgoogle,
-                    height: 24.h,
-                    width: 24.w,
+                    height: 20.h,
+                    width: 20.w,
                   ),
                   // horizontalSpace(10.w),
                   Text(
@@ -52,8 +52,8 @@ class GoogleFacebookButton extends StatelessWidget {
                 children: [
                   SvgPicture.asset(
                     AppAssets.assetfacebook,
-                    height: 24.h, // Adjust as needed
-                    width: 24.w,
+                    height: 20.h, // Adjust as needed
+                    width: 20.w,
                   ),
                   // horizontalSpace(10.w),
                   Text(

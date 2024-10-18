@@ -22,4 +22,6 @@ class AppStyles {
       TextStyle(fontSize: 14.0.sp, fontWeight: FontWeight.w400);
   static final textStyle12 =
       TextStyle(fontSize: 12.0.sp, fontWeight: FontWeight.w400);
+  static final validateStyle = TextStyle(
+      fontSize: 14.0.sp, fontWeight: FontWeight.w400, color: Colors.red);
 }

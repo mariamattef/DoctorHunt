@@ -7,6 +7,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class AppTextFormField extends StatelessWidget {
   final EdgeInsetsGeometry? contentPadding;
   final TextInputType? keyboardType;
+  final TextInputAction? textInputAction;
   // Padding inside the text field.
   final InputBorder? focusedBorder;
   //  Border style when the text field is focused.
@@ -36,6 +37,7 @@ class AppTextFormField extends StatelessWidget {
   const AppTextFormField({
     super.key,
     this.keyboardType,
+    this.textInputAction,
     this.contentPadding,
     this.focusedBorder,
     this.inputStyle,
@@ -66,6 +68,8 @@ class AppTextFormField extends StatelessWidget {
         // validator is a function that checks if the text input is valid and
         // returns an error message if it isn't.
       },
+      textInputAction: textInputAction,
+      autovalidateMode: AutovalidateMode.onUserInteraction,
 
       decoration: InputDecoration(
         labelText: labelText,

@@ -31,7 +31,7 @@ class CustomElevatedButton extends StatelessWidget {
           EdgeInsets.symmetric(vertical: 10.h, horizontal: horizontal ?? 20.w),
       child: SizedBox(
         width: width,
-        height: 54.h,
+        height: 52.h,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
               elevation: 5,

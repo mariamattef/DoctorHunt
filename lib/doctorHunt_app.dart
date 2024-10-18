@@ -17,8 +17,8 @@ class DoctorHuntApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Doctor Hunt',
           theme: ThemeData.light().copyWith(
-              textTheme:
-                  GoogleFonts.rubikTextTheme(ThemeData.light().textTheme)),
+            textTheme: GoogleFonts.rubikTextTheme(ThemeData.light().textTheme),
+          ),
         );
       },
       designSize: const Size(360, 690),
