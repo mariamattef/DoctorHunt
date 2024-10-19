@@ -1,11 +1,11 @@
 import 'package:doctor_hunt/core/Constants/spacing.dart';
 import 'package:doctor_hunt/core/Routing/app_router.dart';
 import 'package:doctor_hunt/core/widgets/custom_elevated_button.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/widgets/form_signup_widget.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/widgets/google_facebook_button.dart';
+import 'package:doctor_hunt/features/autth/presentarion/widgets/form_signup_widget.dart';
+import 'package:doctor_hunt/features/autth/presentarion/widgets/google_facebook_button.dart';
 import 'package:go_router/go_router.dart';
-import '../../../../../core/Constants/app_colors.dart';
-import '../../../../../core/Constants/app_syyles.dart';
+import '../../../../core/Constants/app_colors.dart';
+import '../../../../core/Constants/app_syyles.dart';
 import 'custom_intro_signup.dart';
 import 'sure_login_password_widget.dart';
 import 'package:flutter/material.dart';
@@ -80,6 +80,7 @@ class _SignUpPageBodyState extends State<SignUpPageBody> {
                   }
                 },
                 text: 'Sign up'),
+                //! TODO: Here needs be a signup not login button 
             SureLoginAndPassword(
               underSignUpButton1: 'Have an account?',
               underSignUpButton2: 'Log In',

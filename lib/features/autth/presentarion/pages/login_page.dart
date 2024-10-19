@@ -4,12 +4,9 @@ import 'package:doctor_hunt/core/Constants/app_syyles.dart';
 import 'package:doctor_hunt/core/Constants/spacing.dart';
 import 'package:doctor_hunt/core/widgets/custom_elevated_button.dart';
 import 'package:doctor_hunt/core/widgets/text_form_field.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/forget_password_page.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/forget_password_page.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/forget_password_page.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/widgets/custom_intro_signup.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/widgets/sure_login_password_widget.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/widgets/google_facebook_button.dart';
+import 'package:doctor_hunt/features/autth/presentarion/widgets/custom_intro_signup.dart';
+import 'package:doctor_hunt/features/autth/presentarion/widgets/sure_login_password_widget.dart';
+import 'package:doctor_hunt/features/autth/presentarion/widgets/google_facebook_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/Routing/app_router.dart';
@@ -171,7 +168,7 @@ class _LoginPageState extends State<LoginPage> {
                 color: AppColors.whiteColor,
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30.r),
-                    topRight: Radius.circular(30.r))),
+                    topRight: Radius.circular(30.r),),),
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.w),
               child: Column(
@@ -274,7 +271,7 @@ class _LoginPageState extends State<LoginPage> {
                           context: context,
                           builder: (context) {
                             return AlertDialog(
-                              title: Text("Verification Code"),
+                              title: const Text("Verification Code"),
                               content:
                                   Text('Code entered is $verificationCode'),
                             );
@@ -299,6 +296,7 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
+//! TODO: We will not use OTP 
   void showResetPassword() {
     showModalBottomSheet(
       context: context,

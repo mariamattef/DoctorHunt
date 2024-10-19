@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class ForgetPasswordScreen extends StatelessWidget {
+  const ForgetPasswordScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Forget Password Example'),
+        title: const Text('Forget Password Example'),
       ),
       body: Center(
         child: TextButton(
@@ -13,7 +15,7 @@ class ForgetPasswordScreen extends StatelessWidget {
             showModalBottomSheet(
               context: context,
               isScrollControlled: true, // For better height control
-              shape: RoundedRectangleBorder(
+              shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.vertical(top: Radius.circular(25.0)),
               ),
               builder: (context) {
@@ -22,24 +24,24 @@ class ForgetPasswordScreen extends StatelessWidget {
                     bottom: MediaQuery.of(context).viewInsets.bottom,
                   ),
                   child: Container(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        TextField(
+                        const TextField(
                           decoration: InputDecoration(
                             labelText: 'Enter your email',
                             border: OutlineInputBorder(),
                           ),
                           keyboardType: TextInputType.emailAddress,
                         ),
-                        SizedBox(height: 16.0),
+                        const SizedBox(height: 16.0),
                         ElevatedButton(
                           onPressed: () {
                             // Add your password reset logic here
                             Navigator.pop(context);
                           },
-                          child: Text('Continue'),
+                          child: const Text('Continue'),
                         ),
                       ],
                     ),
@@ -48,7 +50,7 @@ class ForgetPasswordScreen extends StatelessWidget {
               },
             );
           },
-          child: Text('Forget Password'),
+          child: const Text('Forget Password'),
         ),
       ),
     );

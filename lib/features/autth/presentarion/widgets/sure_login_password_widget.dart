@@ -1,5 +1,5 @@
-import '../../../../../core/Constants/app_colors.dart';
-import '../../../../../core/Constants/app_syyles.dart';
+import '../../../../core/Constants/app_colors.dart';
+import '../../../../core/Constants/app_syyles.dart';
 import 'package:flutter/material.dart';
 
 class SureLoginAndPassword extends StatelessWidget {
@@ -27,7 +27,7 @@ class SureLoginAndPassword extends StatelessWidget {
         InkWell(
             onTap: onTap,
             child: Text(
-              underSignUpButton2 ?? '',
+              underSignUpButton2!,
               style: AppStyles.textStyle14.copyWith(
                 color: AppColors.primaryColor,
               ),

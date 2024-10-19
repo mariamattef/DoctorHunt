@@ -1,8 +1,6 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:doctor_hunt/features/Home/presentation/widgets/home_page.dart';
 import 'package:doctor_hunt/features/autth/presentarion/pages/forget_password_page.dart';
 import 'package:doctor_hunt/features/autth/presentarion/pages/login_page.dart';
-import 'package:doctor_hunt/features/on_boarding/oresentations/pages/on_boarding_page.dart';
+import 'package:doctor_hunt/features/on_boarding/presentation/pages/on_boarding_page.dart';
 import 'package:doctor_hunt/features/autth/presentarion/pages/signup_page.dart';
 import 'package:go_router/go_router.dart';
 
@@ -18,10 +16,6 @@ class AppRouter {
         builder: (context, state) => const OnBoardingPage(),
       ),
       GoRoute(
-        path: '/HomePage',
-        builder: (context, state) => const HomePage(),
-      ),
-      GoRoute(
         path: '/LoginPage',
         builder: (context, state) => const LoginPage(),
       ),
@@ -31,7 +25,7 @@ class AppRouter {
       ),
       GoRoute(
         path: '/ForgetPasswordScreen',
-        builder: (context, state) => ForgetPasswordScreen(),
+        builder: (context, state) => const ForgetPasswordScreen(),
       ),
     ],
   );

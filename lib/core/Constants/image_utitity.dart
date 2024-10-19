@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 class ImageUtility {
   static const String path = 'assets/images/';
@@ -7,3 +6,5 @@ class ImageUtility {
   static const String onBoarding2 = '${path}image_2.png';
   static const String onBoarding3 = '${path}image_3.png';
 }
+
+//! TODO: Remove this file and use the app assets innstead
