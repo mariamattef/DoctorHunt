@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
+import '../Helpers/experts_helper/general_helper.dart';
 
 class CustomElevatedButton extends StatelessWidget {
   void Function() onPressed;

@@ -1,5 +1,5 @@
-import 'package:doctor_hunt/core/Constants/app_colors.dart';
-import 'package:doctor_hunt/core/Constants/app_syyles.dart';
+import '../../../../core/Constants/app_colors.dart';
+import '../../../../core/Constants/app_syyles.dart';
 import 'package:flutter/material.dart';
 
 class CustomLabelHome extends StatelessWidget {

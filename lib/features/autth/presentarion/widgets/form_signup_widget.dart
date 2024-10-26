@@ -1,7 +1,7 @@
-import 'package:doctor_hunt/core/Constants/app_colors.dart';
-import 'package:doctor_hunt/core/Constants/app_syyles.dart';
-import 'package:doctor_hunt/core/Constants/spacing.dart';
-import 'package:doctor_hunt/core/widgets/text_form_field.dart';
+import '../../../../core/Constants/app_colors.dart';
+import '../../../../core/Constants/app_syyles.dart';
+import '../../../../core/Constants/spacing.dart';
+import '../../../../core/widgets/text_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -28,6 +28,7 @@ class _FormSignupWidgetState extends State<FormSignupWidget> {
     super.dispose();
   }
 
+  @override
   Widget build(BuildContext context) {
     return Form(
         key: widget.formKey,

@@ -1,9 +1,9 @@
-import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/custom_app_bar_home.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/custom_label_home.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/doctor_details_item.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/doctors_spicialties_images.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/feature_doctors_item_list.dart';
+import '../../../../core/Helpers/experts_helper/general_helper.dart';
+import '../widgets/custom_app_bar_home.dart';
+import '../widgets/custom_label_home.dart';
+import '../widgets/doctor_details_item.dart';
+import '../widgets/doctors_spicialties_images.dart';
+import '../widgets/feature_doctors_item_list.dart';
 
 class HomePage extends StatelessWidget {
   static const String id = 'HomePage';

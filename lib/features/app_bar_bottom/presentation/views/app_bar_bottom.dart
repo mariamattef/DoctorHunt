@@ -1,7 +1,7 @@
-import 'package:doctor_hunt/features/Home/presentation/pages/home_page.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/signup_page.dart';
-import 'package:doctor_hunt/features/on_boarding/presentations/pages/on_boarding_page.dart';
-import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
+import '../../../Home/presentation/pages/home_page.dart';
+import '../../../autth/presentarion/pages/signup_page.dart';
+import '../../../on_boarding/presentations/pages/on_boarding_page.dart';
+import '../../../../core/Helpers/experts_helper/general_helper.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AppBarBottom extends StatefulWidget {

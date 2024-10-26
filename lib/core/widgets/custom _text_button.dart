@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/Constants/app_colors.dart';
+import '../Constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

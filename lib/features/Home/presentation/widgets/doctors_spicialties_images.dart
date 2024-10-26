@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
+import '../../../../core/Helpers/experts_helper/general_helper.dart';
 
 class DoctorsSpecialtiesImages extends StatelessWidget {
   DoctorsSpecialtiesImages({super.key});

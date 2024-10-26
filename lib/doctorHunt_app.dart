@@ -1,5 +1,6 @@
+import 'package:doctor_hunt/core/Routing/app_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
+import 'core/Helpers/experts_helper/general_helper.dart';
 
 class DoctorHuntApp extends StatelessWidget {
   // final AppRouter appRouter;

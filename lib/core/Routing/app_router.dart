@@ -1,9 +1,10 @@
-import 'package:doctor_hunt/features/Home/presentation/pages/home_page.dart';
 import 'package:doctor_hunt/features/app_bar_bottom/presentation/views/app_bar_bottom.dart';
+import 'package:doctor_hunt/features/autth/presentarion/pages/forget_password_page.dart';
 import 'package:doctor_hunt/features/autth/presentarion/pages/login_page.dart';
 import 'package:doctor_hunt/features/autth/presentarion/pages/signup_page.dart';
 import 'package:doctor_hunt/features/on_boarding/presentations/pages/on_boarding_page.dart';
-import 'package:go_router/go_router.dart';
+
+import '../../../../core/Helpers/experts_helper/general_helper.dart';
 
 class AppRouter {
   static const kLoginPage = '/LoginPage';
@@ -18,10 +19,6 @@ class AppRouter {
         builder: (context, state) => const OnBoardingPage(),
       ),
       GoRoute(
-        path: '/HomePage',
-        builder: (context, state) => const HomePage(),
-      ),
-      GoRoute(
         path: '/LoginPage',
         builder: (context, state) => const LoginPage(),
       ),
@@ -33,6 +30,11 @@ class AppRouter {
         path: '/AppBarBottom',
         builder: (context, state) => const AppBarBottom(),
       ),
+      GoRoute(
+        path: '/ForgetPasswordScreen',
+        builder: (context, state) => const ForgetPasswordScreen(),
+      )
+
       // GoRoute(
       //   path: '/ForgetPasswordScreen',
       //   builder: (context, state) => ForgetPasswordScreen(),
