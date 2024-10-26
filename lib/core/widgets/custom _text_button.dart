@@ -1,14 +1,15 @@
-import '../Constants/color_utility.dart';
+import 'package:doctor_hunt/core/Constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+// ignore: must_be_immutable
 class CustomTextButton extends StatelessWidget {
   final String label;
   final Color? color;
   void Function()? onPressed;
   CustomTextButton(
       {required this.label,
-      this.color = ColorUtility.main,
+      this.color = AppColors.primaryColor,
       required this.onPressed,
       super.key});
 
@@ -22,7 +23,7 @@ class CustomTextButton extends StatelessWidget {
             textAlign: TextAlign.center,
             label,
             style: TextStyle(
-                color: ColorUtility.grayText,
+                color: AppColors.grayLight,
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w400),
           )),

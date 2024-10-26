@@ -19,7 +19,7 @@ class SureLoginAndPassword extends StatelessWidget {
       // crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
-          underSignUpButton1 ?? '',
+          underSignUpButton1!,
           style: AppStyles.textStyle14.copyWith(
             color: AppColors.primaryColor,
           ),

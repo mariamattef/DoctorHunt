@@ -1,9 +1,4 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../../../../core/Constants/app_colors.dart';
-import '../../../../../core/Constants/app_syyles.dart';
+import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
 
 class CustomIntroSignUp extends StatelessWidget {
   final String title;

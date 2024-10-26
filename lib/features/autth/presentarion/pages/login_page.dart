@@ -1,21 +1,4 @@
-import 'package:doctor_hunt/core/Constants/app_assets.dart';
-import 'package:doctor_hunt/core/Constants/app_colors.dart';
-import 'package:doctor_hunt/core/Constants/app_syyles.dart';
-import 'package:doctor_hunt/core/Constants/spacing.dart';
-import 'package:doctor_hunt/core/widgets/custom_elevated_button.dart';
-import 'package:doctor_hunt/core/widgets/text_form_field.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/forget_password_page.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/forget_password_page.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/forget_password_page.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/widgets/custom_intro_signup.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/widgets/sure_login_password_widget.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/widgets/google_facebook_button.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../../../core/Routing/app_router.dart';
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
 
 class LoginPage extends StatefulWidget {
   static const String id = "LoginPage";
@@ -125,7 +108,7 @@ class _LoginPageState extends State<LoginPage> {
                                     const SnackBar(
                                         content: Text('Processing Data')),
                                   );
-                                  GoRouter.of(context).go(AppRouter.kLoginPage);
+                                  GoRouter.of(context).go(AppRouter.kHomePage);
                                 }
                               },
                               text: 'Login')
@@ -149,7 +132,7 @@ class _LoginPageState extends State<LoginPage> {
                     underSignUpButton1: 'Don’t have an account?',
                     underSignUpButton2: ' Join us',
                     onTap: () {
-                      GoRouter.of(context).go(AppRouter.kSignUpPage);
+                      GoRouter.of(context).go(AppRouter.kAppBarBottom);
                     },
                   )
                 ],
@@ -274,7 +257,7 @@ class _LoginPageState extends State<LoginPage> {
                           context: context,
                           builder: (context) {
                             return AlertDialog(
-                              title: Text("Verification Code"),
+                              title: const Text("Verification Code"),
                               content:
                                   Text('Code entered is $verificationCode'),
                             );

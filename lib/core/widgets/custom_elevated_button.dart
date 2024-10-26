@@ -1,6 +1,4 @@
-import '../Constants/color_utility.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
 
 class CustomElevatedButton extends StatelessWidget {
   void Function() onPressed;
@@ -38,12 +36,12 @@ class CustomElevatedButton extends StatelessWidget {
               shadowColor: Colors.black.withOpacity(0.5),
               fixedSize: Size(width ?? double.infinity, height ?? 52.h),
               shape: RoundedRectangleBorder(
-                side: BorderSide(
+                side: const BorderSide(
                   style: BorderStyle.none,
                 ),
                 borderRadius: BorderRadius.circular(12.0.r),
               ),
-              backgroundColor: color ?? ColorUtility.main,
+              backgroundColor: color ?? AppColors.primaryColor,
               foregroundColor: foregroundColor ?? Colors.white,
               surfaceTintColor: Colors.white),
           onPressed: onPressed,
