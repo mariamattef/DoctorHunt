@@ -2,6 +2,8 @@ import '../../../../core/Helpers/experts_helper/general_helper.dart';
 
 class DoctorsSpecialtiesImages extends StatelessWidget {
   DoctorsSpecialtiesImages({super.key});
+    //! TODO: Make this list in a file alone
+
   final List<String>? images = [
     'assets/images/Group 664.png',
     'assets/images/Group 665.png',

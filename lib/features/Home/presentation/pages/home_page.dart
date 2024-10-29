@@ -6,6 +6,9 @@ import '../widgets/doctors_spicialties_images.dart';
 import '../widgets/feature_doctors_item_list.dart';
 
 class HomePage extends StatelessWidget {
+  //! TODO: Refactor this screen more
+  //! hint : create a HomePageBodyFile
+
   static const String id = 'HomePage';
   const HomePage({super.key});
 
@@ -25,7 +28,7 @@ class HomePage extends StatelessWidget {
             ),
             child: Column(
               children: [
-                CustomAppBArHome(),
+                const CustomAppBArHome(),
                 SizedBox(
                   height: 50.h,
                 ),
@@ -40,7 +43,7 @@ class HomePage extends StatelessWidget {
                         ),
                         verticalSpace(22),
                         SizedBox(
-                            height: MediaQuery.of(context).size.height * .37,
+                            height: MediaQuery.sizeOf(context).height * .37,
                             child: DoctorDetailsItemList()),
                         verticalSpace(31),
                         const CustomLabelHome(
@@ -48,7 +51,9 @@ class HomePage extends StatelessWidget {
                         ),
                         verticalSpace(22),
                         SizedBox(
-                            height: MediaQuery.of(context).size.height * .23,
+                            //! TODO:  Use height: MediaQuery.sizeOf(context).height * .23 instead , this way we enhance app perofromance
+                            height: MediaQuery.sizeOf(context).height * .23,
+                            // height: MediaQuery.of(context).size.height * .23,
                             child: FeatureDoctorsItemList()),
                         verticalSpace(31),
                       ],

@@ -1,3 +1,5 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../../../../core/Constants/app_colors.dart';
 import '../../../../core/Constants/app_syyles.dart';
 import 'package:flutter/material.dart';
@@ -9,11 +11,12 @@ class CustomLabelHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding:  EdgeInsets.symmetric(horizontal: 20.w),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
+            //! TODO: Use App Strings And Style files
             text,
             style: AppStyles.textStyle18.copyWith(fontWeight: FontWeight.w500),
           ),
@@ -22,7 +25,7 @@ class CustomLabelHome extends StatelessWidget {
               Text('See all',
                   style: AppStyles.textStyle12.copyWith(
                       fontWeight: FontWeight.w300, color: AppColors.textColor)),
-              Icon(
+              const Icon(
                 Icons.arrow_forward_ios,
                 color: AppColors.textColor,
                 size: 15,
