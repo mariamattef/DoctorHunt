@@ -33,6 +33,7 @@ class CustomAppBarHome extends StatelessWidget {
                         ),
                         verticalSpace(6),
                         Text(
+                          //! TODO: Use App Strings And Style files
                           'Find Your Doctor',
                           style: AppStyles.textStyle25
                               .copyWith(color: AppColors.whiteColor),

@@ -1,7 +1,11 @@
 import '../../../../core/Helpers/experts_helper/general_helper.dart';
 
 class FeatureDoctorsItemList extends StatelessWidget {
+                  //! TODO: Refactor this more
+
   FeatureDoctorsItemList({super.key});
+    //! TODO: Make this list in a file alone
+
   final List<String>? images = [
     'assets/images/image_feat1.png',
     'assets/images/image_feat2.png',

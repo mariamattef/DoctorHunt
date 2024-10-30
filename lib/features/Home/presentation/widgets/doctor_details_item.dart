@@ -1,7 +1,10 @@
 import '../../../../core/Helpers/experts_helper/general_helper.dart';
 
 class DoctorDetailsItemList extends StatelessWidget {
+  //! TODO: Refactor this more
+
   DoctorDetailsItemList({super.key});
+  //! TODO: Make this list in a file alone
   final List<String>? images = [
     'assets/images/Rectangle1.png',
     'assets/images/Rectangle2.png',
@@ -14,13 +17,13 @@ class DoctorDetailsItemList extends StatelessWidget {
         itemCount: images!.length,
         itemBuilder: (context, index) {
           return Padding(
-            padding: const EdgeInsets.only(left: 20),
+            padding:  EdgeInsets.only(left: 20.w),
             child: Container(
               height: MediaQuery.of(context).size.height * .20,
               width: MediaQuery.of(context).size.width * .5,
               decoration: BoxDecoration(
                   color: AppColors.whiteColor,
-                  borderRadius: const BorderRadius.all(Radius.circular(12)),
+                  borderRadius:  BorderRadius.all(Radius.circular(12.r)),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.black
