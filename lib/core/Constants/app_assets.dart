@@ -10,6 +10,7 @@ mixin VideoAssets {
   static const String videoAssets = "assets/videos/";
 }
 
+// assets\images\medical_records.png
 class AppAssets with PngAssets, SvgAssets, VideoAssets {
   // Image PNG
 //   static const String adsImage = "${PngAssets.pngAssets}ads.png";
@@ -21,6 +22,8 @@ class AppAssets with PngAssets, SvgAssets, VideoAssets {
   static const String logo = '${PngAssets.pngAssets}logo.png';
   static const String onBoarding1 = '${PngAssets.pngAssets}image_1.png';
   static const String onBoarding2 = '${PngAssets.pngAssets}image_2.png';
+  static const String medicalRecords =
+      '${PngAssets.pngAssets}medical_records.png';
   static const String onBoarding3 = '${PngAssets.pngAssets}image_3.png';
   static const String assethome = "${SvgAssets.svgAssets}Group 1.svg";
   static const String assetheart = "${SvgAssets.svgAssets}Group 2.svg";

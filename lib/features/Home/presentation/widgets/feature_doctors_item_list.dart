@@ -1,10 +1,4 @@
-import '../../../../core/Constants/app_colors.dart';
-import '../../../../core/Constants/app_syyles.dart';
-import '../../../../core/Constants/spacing.dart';
 import '../../../../core/Helpers/experts_helper/general_helper.dart';
-import '../../../../core/Helpers/experts_helper/general_helper.dart';
-import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class FeatureDoctorsItemList extends StatelessWidget {
   FeatureDoctorsItemList({super.key});
@@ -43,7 +37,7 @@ class FeatureDoctorsItemList extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       const Icon(
-                        FontAwesomeIcons.heart,
+                        Icons.favorite_rounded,
                         color: AppColors.textColor,
                         size: 18,
                       ),

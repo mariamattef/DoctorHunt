@@ -1,8 +1,8 @@
-import '../../../../core/Helpers/experts_helper/general_helper.dart';
+import '../../../../../core/Helpers/experts_helper/general_helper.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class CustomAppBArHome extends StatelessWidget {
-  const CustomAppBArHome({super.key});
+class CustomAppBarHome extends StatelessWidget {
+  const CustomAppBarHome({super.key});
 
   @override
   Widget build(BuildContext context) {

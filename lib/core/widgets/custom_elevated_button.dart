@@ -10,11 +10,14 @@ class CustomElevatedButton extends StatelessWidget {
   double? width;
   double? height;
   Color? color;
+  BorderRadius? borderRadius;
 
   CustomElevatedButton(
       {required this.onPressed,
       this.backgroundColor,
       this.width,
+      this.height,
+      this.borderRadius,
       this.foregroundColor,
       this.child,
       this.text,
@@ -29,7 +32,6 @@ class CustomElevatedButton extends StatelessWidget {
           EdgeInsets.symmetric(vertical: 10.h, horizontal: horizontal ?? 20.w),
       child: SizedBox(
         width: width,
-        height: 52.h,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
               elevation: 5,
@@ -39,7 +41,7 @@ class CustomElevatedButton extends StatelessWidget {
                 side: const BorderSide(
                   style: BorderStyle.none,
                 ),
-                borderRadius: BorderRadius.circular(12.0.r),
+                borderRadius: borderRadius ?? BorderRadius.circular(12.0.r),
               ),
               backgroundColor: color ?? AppColors.primaryColor,
               foregroundColor: foregroundColor ?? Colors.white,

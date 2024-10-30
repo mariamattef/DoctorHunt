@@ -1,3 +1,5 @@
+import 'package:doctor_hunt/features/Search/presentation/pages/search_page.dart';
+
 import '../../../Home/presentation/pages/home_page.dart';
 import '../../../autth/presentarion/pages/signup_page.dart';
 import '../../../on_boarding/presentations/pages/on_boarding_page.dart';
@@ -24,7 +26,7 @@ class _HomePageState extends State<AppBarBottom> {
       case 1:
         return const OnBoardingPage();
       case 2:
-        return const SignUpPage();
+        return const SearchPage();
       case 3:
         return const HomePage();
 

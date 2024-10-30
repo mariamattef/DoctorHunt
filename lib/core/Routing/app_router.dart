@@ -1,8 +1,10 @@
+import 'package:doctor_hunt/features/Search/presentation/pages/search_page.dart';
 import 'package:doctor_hunt/features/app_bar_bottom/presentation/views/app_bar_bottom.dart';
 import 'package:doctor_hunt/features/autth/presentarion/pages/forget_password_page.dart';
 import 'package:doctor_hunt/features/autth/presentarion/pages/login_page.dart';
 import 'package:doctor_hunt/features/autth/presentarion/pages/signup_page.dart';
-import 'package:doctor_hunt/features/on_boarding/presentations/pages/on_boarding_page.dart';
+import 'package:doctor_hunt/features/medical_records/presentation/pages/add_records.dart';
+import 'package:doctor_hunt/features/medical_records/presentation/pages/medical_records.dart';
 
 import '../../../../core/Helpers/experts_helper/general_helper.dart';
 
@@ -11,12 +13,15 @@ class AppRouter {
   static const kSignUpPage = '/SignUpPage';
   static const kHomePage = '/HomePage';
   static const kAppBarBottom = '/AppBarBottom';
+  static const kSearchPage = '/SearchPage';
+  static const kMedicalRecordsPage = '/MedicalRecordsPage';
+  static const kAddRecordsPage = '/AddRecordsPage';
 
   final router = GoRouter(
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const OnBoardingPage(),
+        builder: (context, state) => const MedicalRecordsPage(),
       ),
       GoRoute(
         path: '/LoginPage',
@@ -33,7 +38,15 @@ class AppRouter {
       GoRoute(
         path: '/ForgetPasswordScreen',
         builder: (context, state) => const ForgetPasswordScreen(),
-      )
+      ),
+      GoRoute(
+        path: '/SearchPage',
+        builder: (context, state) => const SearchPage(),
+      ),
+      GoRoute(
+        path: '/AddRecordsPage',
+        builder: (context, state) => const AddRecordsPage(),
+      ),
 
       // GoRoute(
       //   path: '/ForgetPasswordScreen',

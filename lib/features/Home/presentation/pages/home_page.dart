@@ -1,6 +1,6 @@
 import '../../../../core/Helpers/experts_helper/general_helper.dart';
-import '../widgets/custom_app_bar_home.dart';
-import '../widgets/custom_label_home.dart';
+import '../widgets/home_page_body_file/custom_app_bar_home.dart';
+import '../widgets/home_page_body_file/custom_label_home.dart';
 import '../widgets/doctor_details_item.dart';
 import '../widgets/doctors_spicialties_images.dart';
 import '../widgets/feature_doctors_item_list.dart';
@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
             ),
             child: Column(
               children: [
-                CustomAppBArHome(),
+                const CustomAppBarHome(),
                 SizedBox(
                   height: 50.h,
                 ),

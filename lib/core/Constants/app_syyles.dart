@@ -14,12 +14,16 @@ class AppStyles {
     fontSize: 24.0.sp,
     fontWeight: FontWeight.w500,
   );
+  static final textStyle22 = TextStyle(
+    fontSize: 22.0.sp,
+    fontWeight: FontWeight.w700,
+  );
   static final textStyle20 = TextStyle(
     fontSize: 20.0.sp,
     fontWeight: FontWeight.w400,
   );
-  static final textStyle18 =
-      TextStyle(fontSize: 18.0.sp, fontWeight: FontWeight.w500);
+  static final textStyle18 = TextStyle(
+      fontSize: 18.0.sp, fontWeight: FontWeight.w600, color: Color(0xff333333));
   static final textStyle16 =
       TextStyle(fontSize: 16.0.sp, fontWeight: FontWeight.w300);
   static final textStyle15 =
