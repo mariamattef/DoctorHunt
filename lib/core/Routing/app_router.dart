@@ -1,11 +1,15 @@
+import 'package:doctor_hunt/core/DI/dependency_injection.dart';
+import 'package:doctor_hunt/features/Home/presentation/pages/home_page.dart';
 import 'package:doctor_hunt/features/Search/presentation/pages/search_page.dart';
 import 'package:doctor_hunt/features/app_bar_bottom/presentation/views/app_bar_bottom.dart';
+import 'package:doctor_hunt/features/autth/logic/cubits/login_cubit/login_cubit.dart';
+import 'package:doctor_hunt/features/autth/logic/cubits/signup_cubit/signup_cubit.dart';
 import 'package:doctor_hunt/features/autth/presentarion/pages/forget_password_page.dart';
 import 'package:doctor_hunt/features/autth/presentarion/pages/login_page.dart';
 import 'package:doctor_hunt/features/autth/presentarion/pages/signup_page.dart';
 import 'package:doctor_hunt/features/medical_records/presentation/pages/add_records.dart';
-import 'package:doctor_hunt/features/medical_records/presentation/pages/medical_records.dart';
-
+import 'package:doctor_hunt/features/on_boarding/presentations/pages/on_boarding_page.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/Helpers/experts_helper/general_helper.dart';
 
 class AppRouter {
@@ -16,20 +20,27 @@ class AppRouter {
   static const kSearchPage = '/SearchPage';
   static const kMedicalRecordsPage = '/MedicalRecordsPage';
   static const kAddRecordsPage = '/AddRecordsPage';
+  // final arguments = settings.arguments;
 
   final router = GoRouter(
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const MedicalRecordsPage(),
+        builder: (context, state) => const OnBoardingPage(),
       ),
       GoRoute(
         path: '/LoginPage',
-        builder: (context, state) => const LoginPage(),
+        builder: (context, state) => BlocProvider(
+          create: (context) => getIt<LoginCubit>(),
+          child: const LoginPage(),
+        ),
       ),
       GoRoute(
         path: '/SignUpPage',
-        builder: (context, state) => const SignUpPage(),
+        builder: (context, state) => BlocProvider(
+          create: (context) => getIt<SignupCubit>(),
+          child: const SignUpPage(),
+        ),
       ),
       GoRoute(
         path: '/AppBarBottom',
@@ -47,11 +58,10 @@ class AppRouter {
         path: '/AddRecordsPage',
         builder: (context, state) => const AddRecordsPage(),
       ),
-
-      // GoRoute(
-      //   path: '/ForgetPasswordScreen',
-      //   builder: (context, state) => ForgetPasswordScreen(),
-      // ),
+      GoRoute(
+        path: '/HomePage',
+        builder: (context, state) => const HomePage(),
+      ),
     ],
   );
 }
@@ -71,7 +81,10 @@ class AppRouter {
 //         );
 //       case LoginPage.id:
 //         return MaterialPageRoute(
-//           builder: (context) => const LoginPage(),
+//           builder: (context) => BlocProvider(
+//             create: (context) => GetIt<LoginCubit>(),
+//             child: const LoginPage(),
+//           ),
 //         );
 //       case SignUpPage.id:
 //         return MaterialPageRoute(

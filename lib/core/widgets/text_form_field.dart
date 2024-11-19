@@ -69,7 +69,7 @@ class AppTextFormField extends StatelessWidget {
         // returns an error message if it isn't.
       },
       textInputAction: textInputAction,
-      autovalidateMode: AutovalidateMode.onUserInteraction,
+      // autovalidateMode: AutovalidateMode.onUserInteraction,
 
       decoration: InputDecoration(
         labelText: labelText,
@@ -127,7 +127,7 @@ class AppTextFormField extends StatelessWidget {
             radius?.r ?? 0,
           ),
           borderSide: BorderSide(
-            color: AppColors.primaryColorWithOpacity,
+            color: Colors.red,
             width: 1.w,
           ),
         ),
@@ -137,7 +137,7 @@ class AppTextFormField extends StatelessWidget {
             radius?.r ?? 0,
           ),
           borderSide: BorderSide(
-            color: AppColors.primaryColorWithOpacity,
+            color: Colors.red,
             width: 1.w,
           ),
         ),

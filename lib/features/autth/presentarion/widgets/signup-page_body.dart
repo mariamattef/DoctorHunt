@@ -1,7 +1,7 @@
 import 'package:doctor_hunt/core/Routing/app_router.dart';
 import 'package:doctor_hunt/features/autth/presentarion/widgets/form_signup_widget.dart';
 import 'package:doctor_hunt/features/autth/presentarion/widgets/google_facebook_button.dart';
-
+import 'package:doctor_hunt/features/autth/presentarion/widgets/signup_bloc_listener.dart';
 import '../../../../core/Helpers/experts_helper/general_helper.dart';
 
 class SignUpPageBody extends StatefulWidget {
@@ -12,8 +12,6 @@ class SignUpPageBody extends StatefulWidget {
 }
 
 class _SignUpPageBodyState extends State<SignUpPageBody> {
-  GlobalKey<FormState> formKey = GlobalKey();
-
   final bool isAgree = false;
 
   @override
@@ -31,9 +29,7 @@ class _SignUpPageBodyState extends State<SignUpPageBody> {
             ),
             const GoogleFacebookButton(),
             verticalSpace(28.h),
-            FormSignupWidget(
-              formKey: formKey,
-            ),
+            const FormSignupWidget(),
             verticalSpace(15.h),
             Row(
               children: [
@@ -61,19 +57,6 @@ class _SignUpPageBodyState extends State<SignUpPageBody> {
               ],
             ),
             verticalSpace(54),
-            CustomElevatedButton(
-                backgroundColor: AppColors.primaryColor,
-                width: double.infinity,
-                onPressed: () {
-                  if (formKey.currentState!.validate()) {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Processing Data')),
-                    );
-                    GoRouter.of(context).go(AppRouter.kLoginPage);
-                  }
-                },
-                text: 'Sign up'),
-            //! TODO: Here needs be a signup not login button
             SureLoginAndPassword(
               underSignUpButton1: 'Have an account?',
               underSignUpButton2: 'Log In',
@@ -81,6 +64,7 @@ class _SignUpPageBodyState extends State<SignUpPageBody> {
                 GoRouter.of(context).go(AppRouter.kLoginPage);
               },
             ),
+            const SignupBlocListener(),
           ],
         ),
       ),
