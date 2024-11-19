@@ -50,7 +50,7 @@ class FeatureDoctorsItemList extends StatelessWidget {
                           const Icon(
                             Icons.star,
                             color: AppColors.colorYellow,
-                            size: 18,
+                            size: 18.r,
                           ),
                           horizontalSpace(6),
                           const Text(
