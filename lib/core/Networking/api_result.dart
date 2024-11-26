@@ -1,4 +1,3 @@
-import 'package:doctor_hunt/core/Networking/api_constants.dart';
 import 'package:doctor_hunt/core/Networking/api_error_handller.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 part 'api_result.freezed.dart';

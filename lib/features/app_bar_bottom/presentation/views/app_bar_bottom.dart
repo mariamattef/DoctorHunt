@@ -1,6 +1,6 @@
-import 'package:doctor_hunt/features/Search/presentation/pages/search_page.dart';
+import 'package:doctor_hunt/features/search/presentation/pages/search_page.dart';
 
-import '../../../Home/presentation/pages/home_page.dart';
+import '../../../home/presentation/pages/home_page.dart';
 import '../../../autth/presentarion/pages/signup_page.dart';
 import '../../../on_boarding/presentations/pages/on_boarding_page.dart';
 import '../../../../core/Helpers/experts_helper/general_helper.dart';

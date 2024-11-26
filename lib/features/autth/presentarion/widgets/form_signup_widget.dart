@@ -150,6 +150,9 @@ class _FormSignupWidgetState extends State<FormSignupWidget> {
                 if (value == null || value.isEmpty) {
                   return 'Please Enter Your Password';
                 }
+                if (value.length < 6) {
+                  return 'Password must be at least 6 characters';
+                }
                 return null;
               },
             ),
@@ -184,7 +187,10 @@ class _FormSignupWidgetState extends State<FormSignupWidget> {
                   )),
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please Confirm Password';
+                  return 'Confirm Password is required';
+                }
+                if (value != passwordController.text) {
+                  return 'Passwords do not match';
                 }
                 return null;
               },
