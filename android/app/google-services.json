@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "168072604794",
+    "project_id": "doctorhunt-distribution-b0a1a",
+    "storage_bucket": "doctorhunt-distribution-b0a1a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168072604794:android:df0d83c5983b6178425fc3",
+        "android_client_info": {
+          "package_name": "com.example.doctor_hunt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHAARg6XfyT_CcXyosYUNUdEO_VAxPofY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168072604794:android:342959364605cba4425fc3",
+        "android_client_info": {
+          "package_name": "com.example.doctor_hunt.free"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHAARg6XfyT_CcXyosYUNUdEO_VAxPofY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

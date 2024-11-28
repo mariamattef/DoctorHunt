@@ -1,6 +1,6 @@
 import 'package:doctor_hunt/core/DI/dependency_injection.dart';
-import 'package:doctor_hunt/features/Home/presentation/pages/home_page.dart';
-import 'package:doctor_hunt/features/Search/presentation/pages/search_page.dart';
+import 'package:doctor_hunt/features/home/presentation/pages/home_page.dart';
+import 'package:doctor_hunt/features/search/presentation/pages/search_page.dart';
 import 'package:doctor_hunt/features/app_bar_bottom/presentation/views/app_bar_bottom.dart';
 import 'package:doctor_hunt/features/autth/logic/cubits/login_cubit/login_cubit.dart';
 import 'package:doctor_hunt/features/autth/logic/cubits/signup_cubit/signup_cubit.dart';
