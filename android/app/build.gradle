@@ -37,9 +37,7 @@ android {
     productFlavors {
         production {
             dimension = "default"
-            resValue "string", "app_name", "DoctorHunt Production"
-            
-           
+            resValue "string", "app_name", "DoctorHunt Production"  
         }
          development {
             dimension = "default"
