@@ -4,7 +4,6 @@ export 'package:doctor_hunt/core/Constants/app_syyles.dart';
 export 'package:doctor_hunt/core/Constants/spacing.dart';
 export 'package:doctor_hunt/core/widgets/custom_elevated_button.dart';
 export 'package:doctor_hunt/core/widgets/text_form_field.dart';
-import 'package:doctor_hunt/core/Routing/app_router.dart';
 export 'package:doctor_hunt/features/auth/presentarion/widgets/custom_intro_signup.dart';
 
 export 'package:doctor_hunt/features/auth/presentarion/widgets/sure_login_password_widget.dart';

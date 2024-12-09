@@ -1,9 +1,9 @@
-import '../../../../core/Helpers/experts_helper/general_helper.dart';
-import '../widgets/home_page_body_file/custom_app_bar_home.dart';
-import '../widgets/home_page_body_file/custom_label_home.dart';
-import '../widgets/doctor_details_item.dart';
-import '../widgets/doctors_spicialties_images.dart';
-import '../widgets/feature_doctors_item_list.dart';
+import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
+import 'package:doctor_hunt/features/home/presentation/widgets/doctor_details_item.dart';
+import 'package:doctor_hunt/features/home/presentation/widgets/doctors_spicialties_images.dart';
+import 'package:doctor_hunt/features/home/presentation/widgets/feature_doctors_item_list.dart';
+import 'package:doctor_hunt/features/home/presentation/widgets/home_page_body_file/custom_app_bar_home.dart';
+import 'package:doctor_hunt/features/home/presentation/widgets/home_page_body_file/custom_label_home.dart';
 
 class HomePage extends StatelessWidget {
   //! TODO: Refactor this screen more

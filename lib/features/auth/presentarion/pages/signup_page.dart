@@ -1,5 +1,5 @@
+import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
 import 'package:doctor_hunt/features/auth/presentarion/widgets/signup-page_body.dart';
-import '../../../../core/Helpers/experts_helper/general_helper.dart';
 
 class SignUpPage extends StatelessWidget {
   static const String id = "SignUpPage";

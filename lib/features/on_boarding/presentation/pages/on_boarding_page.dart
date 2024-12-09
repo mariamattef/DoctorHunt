@@ -1,8 +1,7 @@
+import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
 import 'package:doctor_hunt/core/Routing/app_router.dart';
 import 'package:doctor_hunt/core/widgets/custom%20_text_button.dart';
 import 'package:doctor_hunt/features/on_boarding/presentations/widgets/onBoarding_item.dart';
-
-import '../../../../core/Helpers/experts_helper/general_helper.dart';
 
 class OnBoardingPage extends StatefulWidget {
   static const String id = 'OnBoardingPage';
