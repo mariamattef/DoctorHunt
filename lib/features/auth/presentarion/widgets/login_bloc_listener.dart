@@ -1,7 +1,7 @@
 import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
 import 'package:doctor_hunt/core/Routing/app_router.dart';
-import 'package:doctor_hunt/features/autth/logic/cubits/login_cubit/login_cubit.dart';
-import 'package:doctor_hunt/features/autth/logic/cubits/login_cubit/login_state.dart';
+import 'package:doctor_hunt/features/auth/logic/cubits/login_cubit/login_cubit.dart';
+import 'package:doctor_hunt/features/auth/logic/cubits/login_cubit/login_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class LoginBlocListener extends StatelessWidget {

@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:doctor_hunt/core/Networking/api_service.dart';
-import 'package:doctor_hunt/features/autth/data/repos/login_repo.dart';
-import 'package:doctor_hunt/features/autth/data/repos/siunup_repo.dart';
-import 'package:doctor_hunt/features/autth/logic/cubits/login_cubit/login_cubit.dart';
-import 'package:doctor_hunt/features/autth/logic/cubits/signup_cubit/signup_cubit.dart';
+import 'package:doctor_hunt/features/auth/data/repos/login_repo.dart';
+import 'package:doctor_hunt/features/auth/data/repos/siunup_repo.dart';
+import 'package:doctor_hunt/features/auth/logic/cubits/login_cubit/login_cubit.dart';
+import 'package:doctor_hunt/features/auth/logic/cubits/signup_cubit/signup_cubit.dart';
 import 'package:get_it/get_it.dart';
 
 final getIt = GetIt.instance;

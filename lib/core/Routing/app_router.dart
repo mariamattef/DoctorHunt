@@ -1,16 +1,16 @@
 import 'package:doctor_hunt/core/DI/dependency_injection.dart';
+import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
+import 'package:doctor_hunt/features/auth/presentarion/pages/forget_password_page.dart';
+import 'package:doctor_hunt/features/auth/presentarion/pages/login_page.dart';
+import 'package:doctor_hunt/features/auth/presentarion/pages/signup_page.dart';
 import 'package:doctor_hunt/features/home/presentation/pages/home_page.dart';
 import 'package:doctor_hunt/features/search/presentation/pages/search_page.dart';
 import 'package:doctor_hunt/features/app_bar_bottom/presentation/views/app_bar_bottom.dart';
-import 'package:doctor_hunt/features/autth/logic/cubits/login_cubit/login_cubit.dart';
-import 'package:doctor_hunt/features/autth/logic/cubits/signup_cubit/signup_cubit.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/forget_password_page.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/login_page.dart';
-import 'package:doctor_hunt/features/autth/presentarion/pages/signup_page.dart';
+import 'package:doctor_hunt/features/auth/logic/cubits/login_cubit/login_cubit.dart';
+import 'package:doctor_hunt/features/auth/logic/cubits/signup_cubit/signup_cubit.dart';
 import 'package:doctor_hunt/features/medical_records/presentation/pages/add_records.dart';
-import 'package:doctor_hunt/features/on_boarding/presentations/pages/on_boarding_page.dart';
+import 'package:doctor_hunt/features/on_boarding/presentation/pages/on_boarding_page.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/Helpers/experts_helper/general_helper.dart';
 
 class AppRouter {
   static const kLoginPage = '/LoginPage';

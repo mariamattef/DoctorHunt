@@ -1,18 +1,18 @@
 import 'package:doctor_hunt/core/Networking/api_error_handller.dart';
 import 'package:doctor_hunt/core/Networking/api_result.dart';
 import 'package:doctor_hunt/core/Networking/api_service.dart';
-import 'package:doctor_hunt/features/autth/data/models/signup_request_body.dart';
-import 'package:doctor_hunt/features/autth/data/models/signup_response.dart';
+import 'package:doctor_hunt/features/auth/data/models/login_request_body.dart';
+import 'package:doctor_hunt/features/auth/data/models/login_response.dart';
 
-class SignupRepo {
+class LoginRepo {
   ApiService apiService;
-  SignupRepo(
+  LoginRepo(
     this.apiService,
   );
-  Future<ApiResult<SignupResponse>> signup(
-      SignUpRequestBody signupRequestBody) async {
+  Future<ApiResult<LoginResponse>> login(
+      LoginRequestBody loginRequestBody) async {
     try {
-      final response = await apiService.signup(signupRequestBody);
+      final response = await apiService.login(loginRequestBody);
       return ApiResult.success(response);
     } catch (error) {
       return ApiResult.failure(ErrorHandler.handle(error));

@@ -1,5 +1,5 @@
 import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
-import 'package:doctor_hunt/features/autth/logic/cubits/login_cubit/login_cubit.dart';
+import 'package:doctor_hunt/features/auth/logic/cubits/login_cubit/login_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class EmailAndPassword extends StatefulWidget {

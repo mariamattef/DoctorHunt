@@ -1,8 +1,8 @@
 import 'package:doctor_hunt/core/Routing/app_router.dart';
-import 'package:doctor_hunt/features/autth/logic/cubits/login_cubit/login_cubit.dart';
-import 'package:doctor_hunt/features/autth/presentarion/widgets/email_and_password.dart';
-import 'package:doctor_hunt/features/autth/presentarion/widgets/google_facebook_button.dart';
-import 'package:doctor_hunt/features/autth/presentarion/widgets/login_bloc_listener.dart';
+import 'package:doctor_hunt/features/auth/logic/cubits/login_cubit/login_cubit.dart';
+import 'package:doctor_hunt/features/auth/presentarion/widgets/email_and_password.dart';
+import 'package:doctor_hunt/features/auth/presentarion/widgets/google_facebook_button.dart';
+import 'package:doctor_hunt/features/auth/presentarion/widgets/login_bloc_listener.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../core/Helpers/experts_helper/general_helper.dart';
 

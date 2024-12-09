@@ -1,7 +1,7 @@
 import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
-import 'package:doctor_hunt/features/autth/data/models/signup_request_body.dart';
-import 'package:doctor_hunt/features/autth/data/repos/siunup_repo.dart';
-import 'package:doctor_hunt/features/autth/logic/cubits/signup_cubit/signup_state.dart';
+import 'package:doctor_hunt/features/auth/data/models/signup_request_body.dart';
+import 'package:doctor_hunt/features/auth/data/repos/siunup_repo.dart';
+import 'package:doctor_hunt/features/auth/logic/cubits/signup_cubit/signup_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SignupCubit extends Cubit<SignupState> {
