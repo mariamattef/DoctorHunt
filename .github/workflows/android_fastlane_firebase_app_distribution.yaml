@@ -30,15 +30,15 @@ jobs:
           bundler-cache: true
           working-directory: android
 
-      - name: Add x86_64-linux platform to Bundler
-        run: |
-          bundle lock --add-platform x86_64-linux
-        working-directory: android
+      # - name: Add x86_64-linux platform to Bundler
+      #   run: |
+      #     bundle lock --add-platform x86_64-linux
+      #   working-directory: android
 
-      - name: Install dependencies
-        run: |
-          bundle install --no-deployment
-        working-directory: android
+      # - name: Install dependencies
+      #   run: |
+      #     bundle install --no-deployment
+      #   working-directory: android
 
       - name: Build and Distribute App
         env:
