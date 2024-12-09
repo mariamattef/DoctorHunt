@@ -1,5 +1,5 @@
 import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
-import 'package:doctor_hunt/core/Routing/app_router.dart';
+import '../../../../app_router.dart';
 import 'package:doctor_hunt/core/widgets/custom_app_bar.dart';
 
 class MedicalRecordsPage extends StatelessWidget {

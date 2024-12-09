@@ -6,11 +6,8 @@ import 'package:doctor_hunt/features/home/presentation/widgets/home_page_body_fi
 import 'package:doctor_hunt/features/home/presentation/widgets/home_page_body_file/custom_label_home.dart';
 
 class HomePage extends StatelessWidget {
-  //! TODO: Refactor this screen more
-  //! hint : create a HomePageBodyFile
-
   static const String id = 'HomePage';
-  const HomePage({super.key});
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +49,6 @@ class HomePage extends StatelessWidget {
                         ),
                         verticalSpace(22),
                         SizedBox(
-                            //! TODO:  Use height: MediaQuery.sizeOf(context).height * .23 instead , this way we enhance app perofromance
                             height: MediaQuery.sizeOf(context).height * .23,
                             // height: MediaQuery.of(context).size.height * .23,
                             child: FeatureDoctorsItemList()),

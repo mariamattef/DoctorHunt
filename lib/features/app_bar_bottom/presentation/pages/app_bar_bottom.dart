@@ -5,9 +5,7 @@ import 'package:doctor_hunt/features/search/presentation/pages/search_page.dart'
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AppBarBottom extends StatefulWidget {
-  const AppBarBottom({
-    super.key,
-  });
+  const AppBarBottom({super.key});
   static const String id = 'AppBarBottom';
 
   @override

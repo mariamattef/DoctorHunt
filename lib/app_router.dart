@@ -62,6 +62,12 @@ class AppRouter {
         path: '/HomePage',
         builder: (context, state) => const HomePage(),
       ),
+      GoRoute(
+        path: '*',
+        builder: (context, state) => Scaffold(
+          body: Center(child: Text('Page not found')),
+        ),
+      ),
     ],
   );
 }

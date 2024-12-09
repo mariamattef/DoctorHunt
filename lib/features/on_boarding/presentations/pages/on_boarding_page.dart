@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/Routing/app_router.dart';
+import '../../../../app_router.dart';
 import 'package:doctor_hunt/core/widgets/custom%20_text_button.dart';
 import 'package:doctor_hunt/features/on_boarding/presentations/widgets/onBoarding_item.dart';
 

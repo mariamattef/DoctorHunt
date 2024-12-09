@@ -1,5 +1,5 @@
 import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
-import 'package:doctor_hunt/core/Routing/app_router.dart';
+import '../../../../app_router.dart';
 import 'package:doctor_hunt/features/auth/logic/cubits/login_cubit/login_cubit.dart';
 import 'package:doctor_hunt/features/auth/presentarion/widgets/email_and_password.dart';
 import 'package:doctor_hunt/features/auth/presentarion/widgets/google_facebook_button.dart';

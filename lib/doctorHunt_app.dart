@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/Routing/app_router.dart';
+import 'package:doctor_hunt/app_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'core/Helpers/experts_helper/general_helper.dart';
 

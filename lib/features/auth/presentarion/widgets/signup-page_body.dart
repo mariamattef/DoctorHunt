@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/Routing/app_router.dart';
+import '../../../../app_router.dart';
 import 'package:doctor_hunt/features/auth/presentarion/widgets/form_signup_widget.dart';
 import 'package:doctor_hunt/features/auth/presentarion/widgets/google_facebook_button.dart';
 import 'package:doctor_hunt/features/auth/presentarion/widgets/signup_bloc_listener.dart';
