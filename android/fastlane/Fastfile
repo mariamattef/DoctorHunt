@@ -10,7 +10,7 @@ platform :android do
       app: "1:168072604794:android:df0d83c5983b6178425fc3",
       firebase_cli_token:ENV["FIREBASE_CLI_TOKEN"],
       android_artifact_type:"APK",
-      android_artifact_path: "build/app/outputs/flutter-apk/app-production-release.apk ",
+      android_artifact_path: "build/app/outputs/flutter-apk/app-production-release.apk",
       upload_timeout: 600,
       testers: "mariamattef656@gmail.com,ahmed36085361@gmail.com",
       release_notes: "This is a demo release"
