@@ -11,13 +11,9 @@ class CustomAppBarHome extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-              color: AppColors.primaryColor,
-              borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(20.r),
-                  bottomRight: Radius.circular(20.r))),
+              color: AppColors.primaryColor, borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20.r), bottomRight: Radius.circular(20.r))),
           child: Padding(
-            padding: EdgeInsets.only(
-                left: 19.w, right: 10.w, top: 47.h, bottom: 57.h),
+            padding: EdgeInsets.only(left: 19.w, right: 10.w, top: 47.h, bottom: 57.h),
             child: Column(
               children: [
                 Row(
@@ -28,15 +24,13 @@ class CustomAppBarHome extends StatelessWidget {
                       children: [
                         Text(
                           'Hi Handwerker!',
-                          style: AppStyles.textStyle20
-                              .copyWith(color: AppColors.whiteColor),
+                          style: AppStyles.textStyle20.copyWith(color: AppColors.whiteColor),
                         ),
                         verticalSpace(6),
                         Text(
                           //! TODO: Use App Strings And Style files
                           'Find Your Doctor',
-                          style: AppStyles.textStyle25
-                              .copyWith(color: AppColors.whiteColor),
+                          style: AppStyles.textStyle25.copyWith(color: AppColors.whiteColor),
                         ),
                       ],
                     ),
@@ -60,9 +54,8 @@ class CustomAppBarHome extends StatelessWidget {
             height: 65,
             child: AppTextFormField(
               radius: 6,
-              hintText: 'Search.....',
-              hintStyle:
-                  AppStyles.textStyle15.copyWith(color: AppColors.textColor),
+              hintText: 'search.....',
+              hintStyle: AppStyles.textStyle15.copyWith(color: AppColors.textColor),
               prefixIcon: const Icon(
                 FontAwesomeIcons.magnifyingGlass,
                 size: 18,
