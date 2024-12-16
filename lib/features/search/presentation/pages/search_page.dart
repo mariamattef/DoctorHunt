@@ -1,9 +1,7 @@
-import 'package:doctor_hunt/core/Constants/app_assets.dart';
 import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
 import 'package:doctor_hunt/core/widgets/custom_app_bar.dart';
 import 'package:doctor_hunt/core/widgets/custom_search_textfield.dart';
 import 'package:doctor_hunt/features/search/presentation/widgets/card_search_page_item.dart';
-import 'package:flutter/material.dart';
 
 class SearchPage extends StatelessWidget {
   const SearchPage({Key? key}) : super(key: key);

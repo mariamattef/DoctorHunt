@@ -3,6 +3,7 @@ import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
 import 'package:doctor_hunt/features/auth/presentarion/pages/forget_password_page.dart';
 import 'package:doctor_hunt/features/auth/presentarion/pages/login_page.dart';
 import 'package:doctor_hunt/features/auth/presentarion/pages/signup_page.dart';
+import 'package:doctor_hunt/features/home/logic/home_cubit.dart';
 import 'package:doctor_hunt/features/home/presentation/pages/home_page.dart';
 import 'package:doctor_hunt/features/search/presentation/pages/search_page.dart';
 import 'package:doctor_hunt/features/app_bar_bottom/presentation/pages/app_bar_bottom.dart';
@@ -60,7 +61,10 @@ class AppRouter {
       ),
       GoRoute(
         path: '/HomePage',
-        builder: (context, state) => const HomePage(),
+        builder: (context, state) => BlocProvider(
+          create: (context) => HomeCubit(getIt())..getAllDoctors(),
+          child: const HomePage(),
+        ),
       ),
       GoRoute(
         path: '*',

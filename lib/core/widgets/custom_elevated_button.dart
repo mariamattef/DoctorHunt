@@ -1,18 +1,18 @@
 import '../Helpers/experts_helper/general_helper.dart';
 
 class CustomElevatedButton extends StatelessWidget {
-  void Function() onPressed;
-  Color? backgroundColor;
-  Color? foregroundColor;
-  Widget? child;
-  String? text;
-  double? horizontal;
-  double? width;
-  double? height;
-  Color? color;
-  BorderRadius? borderRadius;
+  final void Function() onPressed;
+  final Color? backgroundColor;
+  final Color? foregroundColor;
+  final Widget? child;
+  final String? text;
+  final double? horizontal;
+  final double? width;
+  final double? height;
+  final Color? color;
+  final BorderRadius? borderRadius;
 
-  CustomElevatedButton(
+  const CustomElevatedButton(
       {required this.onPressed,
       this.backgroundColor,
       this.width,
