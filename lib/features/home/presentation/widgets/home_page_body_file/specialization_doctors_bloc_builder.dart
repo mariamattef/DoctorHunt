@@ -56,10 +56,10 @@ class SpecializationDoctorsBlocBuilder extends StatelessWidget {
           text: 'Feature Doctor',
         ),
         verticalSpace(22),
-        SizedBox(
-            height: MediaQuery.sizeOf(context).height * .23,
-            child: FeatureDoctorsItemList()),
-        verticalSpace(31),
+        // SizedBox(
+        //     height: MediaQuery.sizeOf(context).height * .23,
+        //     child: FeatureDoctorsItemList()),
+        // verticalSpace(31),
       ],
     );
   }

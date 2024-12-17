@@ -1,5 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:doctor_hunt/core/Constants/shared_prefs_keys.dart';
 import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
+import 'package:doctor_hunt/core/Helpers/shared_pref_helper.dart';
 import 'package:doctor_hunt/features/auth/data/models/login_request_body.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:doctor_hunt/features/auth/data/repos/login_repo.dart';
@@ -22,10 +24,15 @@ class LoginCubit extends Cubit<LoginState> {
         password: passwordController.text,
       ),
     );
-    response.when(success: (loginRequestBody) {
+    response.when(success: (loginRequestBody) async {
+      await savaUserToken(loginRequestBody.userData?.token ?? '');
       emit(LoginState.success(loginRequestBody));
     }, failure: (error) {
       emit(LoginState.error(error.apiErrorModel.message ?? ''));
     });
+  }
+
+  Future<void> savaUserToken(String token) async {
+    await SharedPrefHelper.setData(SharedPrefsKeys.userToken, token);
   }
 }

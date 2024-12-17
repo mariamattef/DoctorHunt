@@ -1,4 +1,6 @@
 import 'package:dio/dio.dart';
+import 'package:doctor_hunt/core/Constants/shared_prefs_keys.dart';
+import 'package:doctor_hunt/core/Helpers/shared_pref_helper.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 class DioFactory {
@@ -19,11 +21,11 @@ class DioFactory {
     }
   }
 
-  static void addDioHeaders() {
+  static void addDioHeaders() async {
     dio?.options.headers = {
       'Accept': 'application/json',
       'Authorization':
-          'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ZjYXJlLmludGVncmF0aW9uMjUuY29tL2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzM0MzUyNjEzLCJleHAiOjE3MzQ0MzkwMTMsIm5iZiI6MTczNDM1MjYxMywianRpIjoidmVIcXRRTkdYTTNZZzN5eCIsInN1YiI6IjI4OTIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.610zkFkfqLn3TooGafXGW1TKpR5HjVRdL1BVjuH_HaM'
+          'Bearer ${await SharedPrefHelper.getString(SharedPrefsKeys.userToken)}',
     };
   }
 

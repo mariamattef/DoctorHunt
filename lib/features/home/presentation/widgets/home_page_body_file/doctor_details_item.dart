@@ -1,6 +1,5 @@
 import 'package:doctor_hunt/core/Helpers/experts_helper/general_helper.dart';
 import 'package:doctor_hunt/features/home/data/models/all_doctors_response_model.dart';
-import 'package:doctor_hunt/features/home/data/models/specialization_response_model.dart';
 
 class DoctorDetailsItem extends StatelessWidget {
   final DoctorsModel? doctorsModelList;
